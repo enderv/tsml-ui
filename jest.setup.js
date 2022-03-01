@@ -9,6 +9,8 @@ global.React = React;
 const savedLocation = window.location;
 const savedHistory = window.history;
 
+require('jest-fetch-mock').enableMocks();
+
 beforeEach(() => {
   delete window.location;
   delete window.history;

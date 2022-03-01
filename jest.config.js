@@ -8,5 +8,8 @@ module.exports = {
     '!<rootDir>/**/__snapshots__/*',
     '!<rootDir>/e2e/**/*',
   ],
+  moduleNameMapper: {
+    '\\.(css|scss)$': 'identity-obj-proxy',
+  },
   testPathIgnorePatterns: ['e2e'],
 };
